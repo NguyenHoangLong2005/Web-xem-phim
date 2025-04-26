@@ -1,42 +1,166 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="login-container">
-        <h2>ĐĂNG NHẬP</h2>
-        <form>
-            <div class="input-group">
-                <input type="text" placeholder="Username" required>
-                <span class="icon"></span>
-            </div>
-            <div class="input-group">
-                <input type="password" placeholder="Password" required>
-                <span class="icon"></span>
-            </div>
-            <div class="options">
-                <label><input type="checkbox"> Ghi nhớ mật khẩu</label>
-                <a href="#">Quên mật khẩu?</a>
-            </div>
-            <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
-        </form>
+<html lang="en">
 
-        <div class="social-login">
-            <p>Hoặc đăng nhập bằng</p>
-            <div class="social-icons">
-                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
-                <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SECRET FRAMES</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="images/logo2.jpg" width="100" height="60" alt="SECRET FRAMES" />
+    </div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#"><img class="image_header" src="images/home.svg" width="24" alt="Home" />Trang chủ</a></li>
+        <li><a href="#"><img class="image_header" src="images/film.svg" width="24" alt="Phim bộ" />Phim bộ</a></li>
+        <li><a href="#"><img class="image_header" src="images/type.svg" width="24" alt="Thể loại" />Thể loại</a></li>
+        <li><a href="#"><img class="image_header" src="images/world.svg" width="24" alt="Quốc gia" />Quốc gia</a></li>
+        <li><a href="#"><img class="image_header" src="images/trend.svg" width="24" alt="Top trending" />Top
+            trending</a></li>
+      </ul>
+    </nav>
+    <div class="search-user">
+      <input type="text" class="search-input" placeholder="Tìm phim..." />
+      <button class="search-btn">🔍</button>
+      <a href="#" class="login-btn">Đăng nhập</a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/Os76cYlbwOQ?autoplay=1&mute=1&loop=1&playlist=Os76cYlbwOQ&showinfo=0&modestbranding=1&controls=0"
+        frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+      </iframe>
+
+    </div>
+  </section>
+
+  <!-- <section class="hot-movies">
+    <h2> Phim Hot</h2>
+    <div class="movie-list">
+      <div class="movie-card">
+        <img src="images/phim1.webp" alt="Phim 1" />
+        <h3></h3>
+        <p>⭐ 8.7 • Hành động, Viễn tưởng</p>
+      </div>
+      <div class="movie-card">
+        <img src="images/phim2.webp" alt="Phim 2" />
+        <h3>Vùng Đất Câm Lặng II</h3>
+        <p>⭐ 7.9 • Kinh dị, Giật gân</p>
+      </div>
+      <div class="movie-card">
+        <img src="images/phim3.webp" alt="Phim 3" />
+        <h3>John Wick 4</h3>
+        <p>⭐ 9.0 • Hành động, Tội phạm</p>
+      </div>
+    </div>
+  </section> -->
+  <section>
+
+    <div class="trailer-videos">
+      <h2>PHIM ĐỀ CỬ</h2>
+      <div class="trailer-list">
+        <div class="trailer-item">
+          <img src="images/phim1.webp" alt="Phim 1">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim2.webp" alt="Phim 2">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim3.webp" alt="Phim 3">
         </div>
 
-        <p class="register-text">Bạn chưa có tài khoản? <a href="#">Đăng kí</a></p>
+        <div class="trailer-item">
+          <img src="images/phim4.webp" alt="Phim 4">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim5.webp" alt="Phim 5">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim6.webp" alt="Phim 6">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#suggestedCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#suggestedCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+  </section>
+  <section>
+
+    <div class="trailer-videos">
+      <h2>THỊNH HÀNH</h2>
+      <div class="trailer-list">
+        <div class="trailer-item">
+          <img src="images/phim7.webp" alt="Phim 7">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim8.webp" alt="Phim 8">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim9.webp" alt="Phim 9">
+        </div>
+
+        <div class="trailer-item">
+          <img src="images/phim10.webp" alt="Phim 10">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim11.webp" alt="Phim 11">
+        </div>
+        <div class="trailer-item">
+          <img src="images/phim12.webp" alt="Phim 12">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#suggestedCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#suggestedCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-box">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+            <li>Giới thiệu về SECRET FRAMES</li>
+        </ul>
+    </div>
+    <div class="footer-box">
+        <h4>QUY ĐỊNH</h4>
+        <ul>
+            <li>Hợp đồng điện tử</li>
+            <li>Điều khoản và điều kiện</li>
+            <li>Chính sách bảo vệ thông tin cá nhân</li>
+        </ul>
+    </div>
+    <div class="footer-box">
+        <h4>THÔNG TIN</h4>
+        <ul>
+            <li>Thông báo</li>
+            <li>FAQs</li>
+            <li>Liên hệ</li>
+            <li>Góp ý</li>
+        </ul>
+    </div>
+    <div class="footer-note">
+        <p>© 2025 SECRET FRAMES. Bản quyền thuộc về Công ty TNHH SECRET FRAMES. Mọi quyền được bảo lưu.</p>
+    </div>
+</footer>
+
 </body>
+
 </html>
