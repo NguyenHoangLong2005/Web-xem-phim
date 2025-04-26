@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm Kiếm Phim</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav container">
+      <a href="index.html"><img src="logo.jpg" alt="Logo" id="logo"></a>
+      <div class="search-box active">
+        <input type="text" id="searchInput" placeholder="Tìm phim bạn muốn xem..." onkeyup="searchMovie()" />
+        <i class='bx bx-search'></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Kết quả tìm kiếm -->
+  <section class="search-results container">
+    <h2>Kết Quả Tìm Kiếm</h2>
+    <div id="results" class="movies-content">
+      <!-- Kết quả sẽ được render tại đây bằng JavaScript -->
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="search.js"></script>
+</body>
+
+</html>
