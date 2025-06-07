@@ -1,0 +1,248 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* ========================= */
+/* ====== HEADER (GIỮ NGUYÊN) */
+/* ========================= */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #1c1c1c;
+  color: rgb(105, 101, 101);
+
+  padding: 10px 20px; 
+  margin: 0;
+
+  background-color: rgba(28, 28, 28, 0.6); 
+  backdrop-filter: blur(10px);           
+  -webkit-backdrop-filter: blur(10px);   
+
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+}
+
+*{
+  margin-left: 0;
+  margin-right: 0;
+}
+.logo img {
+  border-radius: 13px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff3d00;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(65, 178, 223);
+  transition: color 0.3s;
+}
+
+.navbar img {
+  background-color: white;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.navbar a:hover {
+  color: #f80909;
+}
+
+.search-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-user input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+
+.search-user button {
+  background: white;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-user a{
+  color:rgb(65, 178, 223);
+}
+.login-btn {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.login-btn:hover {
+  color: #ff3d00;
+  text-decoration: underline;
+}
+
+
+/* ========================= */
+/* ===== PHIM SẮP CHIẾU ==== */
+/* ========================= */
+
+.container.sapchieu {
+  max-width: 1280px;
+  margin: 140px auto 60px auto;
+  padding: 0 24px;
+}
+
+.heading-title {
+  font-size: 32px;
+  color: #ff3d00;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ff3d00;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* Grid layout for movie list */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* Movie box style */
+.movie-box {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 61, 0, 0.3);
+}
+
+.movie-box-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.box-text {
+  padding: 12px;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.movie-type {
+  font-size: 14px;
+  color: #bbbbbb;
+  background-color: #2a2a2a;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* ========================= */
+/* ======= FOOTER ========= */
+/* ========================= */
+
+.footer {
+  background-color: #0d0d0d;
+  padding: 40px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-box h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-box ul li:hover {
+  color: #ff3d00;
+}
+
+.footer-image ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-image ul li img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-image ul li img:hover {
+  transform: scale(1.05);
+}
+
+.footer-note {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #999;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
