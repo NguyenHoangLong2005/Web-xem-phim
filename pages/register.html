@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí tài khoản</title>
+    <link rel="stylesheet" href="../assets/css/log_reg_reset_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>ĐĂNG KÍ TÀI KHOẢN</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Họ và tên" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Tên đăng nhập" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Mật khẩu" required>
+                <span class="toggle-password" onclick="togglePassword(this)">👁️‍🗨️</span>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Nhập lại mật khẩu" required>
+                <span class="toggle-password" onclick="togglePassword(this)">👁️‍🗨️</span>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn-login">ĐĂNG KÍ</button>
+        </form>
+
+        <div class="social-login">
+            <p>Hoặc đăng kí bằng</p>
+            <div class="social-icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </div>
+        </div>
+
+        <p class="register-text">Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+    </div>
+
+    <script>
+        function togglePassword(element) {
+            const input = element.previousElementSibling;
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

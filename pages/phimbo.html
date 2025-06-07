@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHIM BỘ</title>
+    <link rel="stylesheet" href="../assets/css/phimbo_styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../assets/js/phimbo.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+    <div class="logo">
+      <img src="../assets/images/logo2.jpg" width="100" height="60" alt="SECRET FRAMES" />
+    </div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html"><img class="image_header" src="../assets/images/home.svg" width="24" alt="Home" />Trang chủ</a></li>
+        <li><a href="#"><img class="image_header" src="../assets/images/film.svg" width="24" alt="Phim bộ" />Phim bộ</a></li>
+        <li><a href="theloai.html"><img class="image_header" src="../assets/images/type.svg" width="24" alt="Thể loại" />Thể loại</a></li>
+        <li><a href="quocgia.html"><img class="image_header" src="../assets/images/world.svg" width="24" alt="Quốc gia" />Quốc gia</a></li>
+        <li><a href="sapchieu.html"><img class="image_header" src="../assets/images/trend.svg" width="24" alt="Top trending" />Sắp chiếu</a></li>
+      </ul>
+    </nav>
+    <div class="search-user">
+      
+      <a href="search.html" class="search-btn">🔍</a>
+      <a href="login.html" class="login-btn">Đăng nhập</a>
+    </div>
+  </header>
+
+    <section class="banner">
+
+
+        <div class="search-section">
+            <h2>Tìm kiếm phim bộ</h2>
+            <select id="movieSelect">
+                <option value="">-- TẤT CẢ THỂ LOẠI --</option>
+                <option value="phim1">Phim Việt</option>
+                <option value="phim2">Phim Trung</option>
+                <option value="phim3">Phim Hàn</option>
+                <option value="phim4">Phim Thái</option>
+                <option value="phim5">Phim HongKong</option>
+                <option value="phim6">Phim Âu Mỹ</option>
+            </select>
+            <div id="movieResults" class="movie-list d-flex flex-wrap mt-4"></div>
+
+        </div>
+
+
+
+
+    </section>
+
+    
+    <section>
+        <div class="trailer-videos">
+            <h2>PHIM ĐỀ CỬ</h2>
+            <div id="suggestedCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim1.webp" alt="Phim 1">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim2.webp" alt="Phim 2">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim3.webp" alt="Phim 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim4.webp" alt="Phim 4">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim5.webp" alt="Phim 5">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim6.webp" alt="Phim 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#suggestedCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#suggestedCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="trailer-videos">
+            <h2>THỊNH HÀNH</h2>
+            <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim7.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim8.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim9.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim10.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim11.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim12.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#trendingCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#trendingCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="trailer-videos">
+            <h2>BAN ĐẦU GƯỢNG ÉP, SAU LẠI ĐẮM SAY</h2>
+            <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/m61.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m62.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m63.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/m64.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m65.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m66.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#showCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="trailer-videos">
+            <h2>SECRET FRAMES - PHIM ĐỘC QUYỀN</h2>
+            <div id="uniqueCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/show7.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/show8.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/show9.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/show10.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/show11.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/show12.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#uniqueCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#uniqueCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="trailer-videos">
+            <h2>CUNG CẤM LẮM DRAMA</h2>
+            <div id="TVCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/m75.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m74.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m73.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/m72.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m71.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m70.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#TVCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#TVCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="trailer-videos">
+            <h2>HỌC ĐƯỜNG QUẨY BANH TRƯỜNG</h2>
+            <div id="TTCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/m81.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m80.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m79.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/m78.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m77.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/m76.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#TTCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#TTCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="trailer-videos">
+            <h2>PHIM VTB MỚI NHẤT - CLICK NGAY</h2>
+            <div id="KCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim13.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim14.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim15.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim16.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim17.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim18.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#KCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#KCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trailer-videos">
+            <h2>PHIM TRUYỀN HÌNH HÀN QUỐC</h2>
+            <div id="KSCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim19.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim20.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim21.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim22.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim23.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim24.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#KSCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#KSCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="trailer-videos">
+            <h2>ĐIỆN ẢNH HOLLYWOOD</h2>
+            <div id="HCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim25.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim26.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim27.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim28.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim29.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim30.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#HCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#HCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trailer-videos">
+            <h2>PHIM GIA ĐÌNH ÂU MỸ</h2>
+            <div id="AMCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim31.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim32.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim33.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim34.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim35.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim36.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#AMCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#AMCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trailer-videos">
+            <h2>PHIM LÃNG MẠN TRUNG QUỐC</h2>
+            <div id="CCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim31.webp" alt="Phim 7">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim38.webp" alt="Phim 8">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim39.webp" alt="Phim 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trailer-list d-flex">
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim18.webp" alt="Phim 10">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim21.webp" alt="Phim 11">
+                            </div>
+                            <div class="trailer-item">
+                                <img src="../assets/images/phim1.webp" alt="Phim 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#CCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#CCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-box">
+            <h4>GIỚI THIỆU</h4>
+            <ul>
+                <li>Giới thiệu về SECRET FRAMES</li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>QUY ĐỊNH</h4>
+            <ul>
+                <li>Hợp đồng điện tử</li>
+                <li>Điều khoản và điều kiện</li>
+                <li>Chính sách bảo vệ thông tin cá nhân</li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>THÔNG TIN</h4>
+            <ul>
+                <li>Thông báo</li>
+                <li>FAQs</li>
+                <li>Liên hệ</li>
+                <li>Góp ý</li>
+            </ul>
+        </div>
+        <div class="footer-image">
+            <ul>
+                <li><img src="../assets/images/logo2.jpg"></li>
+                <li><img src="../assets/images/footer1.svg"></li>
+                <li><img src="../assets/images/footer2.png"></li>
+                <li><img src="../assets/images/footer3.svg"></li>
+            </ul>
+        </div>
+        <div class="footer-note">
+            <p>© 2025 SECRET FRAMES. Bản quyền thuộc về Công ty TNHH SECRET FRAMES. Mọi quyền được bảo lưu.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
